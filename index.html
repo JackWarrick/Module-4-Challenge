@@ -1,110 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Enter your description here" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>JavaScript Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Quiz</title>
 </head>
 
+
+
 <body>
-
-    <!-- using this code from an API activity in class as a baseline to work off of - need to add a timer and have five questions or so - they could pop up in the cards on the bottom and be green or red if correct or false -->
-
-  <!-- Create and apply a custom class name "custom-navbar" -->
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">JavaScript Quiz</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </nav>
-
-  <section id = "question1" class="jumbotron jumbotron-fluid">
     <div class="container">
-      <div class="row align-items-center ">
-        <div class="col-12 col-md-6 text-right">
-          <h1>
-            Question 1
-          </h1>
-          <p class="lead">
-            What year was JavaScript created?
-            <!--1995-->
-          </p>
-        </div>
-        <div class="col-12 col-md-6">
-          <form id="test-form1">
-            <div class="form-group">
-              <input type="text" id="answer-input" placeholder="Enter your answer ..." class="form-control" />
+        <div id="question-container" class = "hide">
+            <div id="question">Questions</div>
+            <div id="answer-btns" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
-            <button class="btn btn-primary">Submit.</button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id= "question2" class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 text-right">
-          <h1>
-            Question 2
-          </h1>
-          <p class="lead">
-            Is JavaScript the most common coding language in the world?
-             <!--yes-->
-          </p>
-        </div>
-        <div class="col-12 col-md-6">
-          <form id="test-form2">
-            <div class="form-group">
-              <input type="text" id="answer-input" placeholder="Enter 'yes' or 'no' ..." class="form-control" />
+            <div class = "controls">
+                <button id = "start-btn" class= "start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
-            <button class="btn btn-primary">Submit.</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <section id= "question3" class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 text-right">
-          <h1>
-            Question 3
-          </h1>
-          <p class="lead">
-            The original name for JavaScript was Espresso (true or false).
-             <!--false-->
-          </p>
-        </div>
-        <div class="col-12 col-md-6">
-          <form id="test-form3">
-            <div class="form-group">
-              <input type="text" id="answer-input" placeholder="Enter 'true' or 'false' ..." class="form-control" />
-            </div>
-            <button class="btn btn-primary">Submit.</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main class="container my-3">
-    <div class="row" id="answer-display"></div>
-  </main>
-
-
+    <script> src="script.js" </script>
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-
 </html>

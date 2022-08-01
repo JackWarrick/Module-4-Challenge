@@ -1,16 +1,26 @@
-var question1 = $('#question1')
-var question2 = $('#question2')
-var question3 = $('#question3')
-var formEl1 = $('#test-form1');
-var formEl2 = $('#test-form2');
-var formEl3 = $('#test-form3');
-var answerInputEl = $('#answer-input');
-var answerDisplayEl = $('#answer-display');
+const startButton = document.getElementById('start-btn')
 
-var startTest = window.confirm("Would you like to begin the test?");
+startButton.addEventListener("click", startGame)
 
-function showQuestion1(){
-    if (startTest) {
-        question1.css("display","flex");
-    }
+//Need to 1 - start game
+
+function startGame(){
+    console.log('Started')
+}
+
+
+
+// bring on next question
+
+function nextQuestion(){
+
+
+}
+
+
+//select answer function that does something when right or wrong is selected
+
+function selectAnswer (){
+
+
 }
