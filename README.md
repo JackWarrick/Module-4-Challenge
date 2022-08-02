@@ -8,7 +8,7 @@ This repository contains HTML, CSS, and JAVASCRIPT files for a program that disp
 
 # Screenshot
 
-![Screenshot of the program](Coding-Challenges/Module-4-Challenge/Module-4-Challenge-Screenshot.jpeg)
+![Screenshot of the program](Module-4-Challenge-Screenshot.jpeg)
 
 # Link to Application
 
