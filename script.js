@@ -111,9 +111,13 @@ const questions = [
         {text: 'true', correct: false},
     ]
 },
-
-
 ]
+
+//Store the questions answered correctly
+
+function storeCorrect(){
+
+}
 
 //timer stuff
 
